@@ -37,6 +37,7 @@ Log output (written to stdout):
 - In turn, `FAILED[404 but expected 200]` indicates that the status code received does not match the original status code.
 - Timeouts and other errors are logged as `FAILED[<error message>]`.
 - Unmatched lines will be logged by: `unmatched: ...`
+- Filtered lines will be logged by: `filtered: ...`
 - Unreplayable request (like POST requests) will be logged by `cannot replay: POST ...`
 
 
