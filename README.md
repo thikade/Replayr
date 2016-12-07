@@ -36,6 +36,8 @@ Log output (written to stdout):
 - A line like `OK[200] 88 http://somehost.com/path` indicates that the replayed request succeeded. It returned the same status code as the original request (200) and the request took 88ms to complete.
 - In turn, `FAILED[404 but expected 200]` indicates that the status code received does not match the original status code.
 - Timeouts and other errors are logged as `FAILED[<error message>]`.
+- Unmatched lines will be logged by: `unmatched: ...`
+- Unreplayable request (like POST requests) will be logged by `cannot replay: POST ...`
 
 
 ## Exclude certain type of requests (e.g., static assets):
